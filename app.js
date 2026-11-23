@@ -1,12 +1,3 @@
-// =========================================================
-// 1. CONFIGURACIÓN DE FIREBASE (PEGA AQUÍ TUS CREDENCIALES)
-// =========================================================
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCPwR0ARBsnYVv959WVIqEAEf57YniBvmk",
   authDomain: "cuceihub-udg.firebaseapp.com",
@@ -17,15 +8,8 @@ const firebaseConfig = {
   appId: "1:82545156726:web:f07c3c7d20d8130b8af557"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-
 firebase.initializeApp(firebaseConfig);
 const dbRef = firebase.database().ref('cuceihub_db_v1');
-
-// =========================================================
-// 2. DATOS INICIALES Y SINCRONIZACIÓN EN TIEMPO REAL
-// =========================================================
 const initialDB = {
   usuarios: [
     { idUsuario: 1, clave: 'ADM-001', nombre: 'Admin', apellidos: 'CUCEI', correo: 'admin@cucei.udg.mx', contrasena: '1234', rol: 'ADMINISTRADOR', activo: true, area: 'Coordinación Académica' },
