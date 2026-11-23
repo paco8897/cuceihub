@@ -1,15 +1,24 @@
 // =========================================================
 // 1. CONFIGURACIÓN DE FIREBASE (PEGA AQUÍ TUS CREDENCIALES)
 // =========================================================
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "TU_API_KEY",
-  authDomain: "TU_PROYECTO.firebaseapp.com",
-  databaseURL: "https://TU_PROYECTO-default-rtdb.firebaseio.com",
-  projectId: "TU_PROYECTO",
-  storageBucket: "TU_PROYECTO.appspot.com",
-  messagingSenderId: "000000000000",
-  appId: "1:000000000000:web:000000000000"
+  apiKey: "AIzaSyCPwR0ARBsnYVv959WVIqEAEf57YniBvmk",
+  authDomain: "cuceihub-udg.firebaseapp.com",
+  databaseURL: "https://cuceihub-udg-default-rtdb.firebaseio.com",
+  projectId: "cuceihub-udg",
+  storageBucket: "cuceihub-udg.firebasestorage.app",
+  messagingSenderId: "82545156726",
+  appId: "1:82545156726:web:f07c3c7d20d8130b8af557"
 };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
 firebase.initializeApp(firebaseConfig);
 const dbRef = firebase.database().ref('cuceihub_db_v1');
